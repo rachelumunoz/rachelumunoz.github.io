@@ -1,11 +1,15 @@
 h4 {
   margin: 10px;
+  margin-bottom: 0;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 200; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
+  ul li {
+    margin-left: 10px; }
 
 .main {
   width: 650px;
@@ -18,9 +22,9 @@ ul {
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-left: 25px; }
     .main .left .skills li {
-      padding: 5px;
       margin-bottom: 3px;
       display: inline-block;
       border-radius: 15px;
@@ -39,28 +43,33 @@ ul {
       flex-direction: column; }
       .main .right .projects div {
         width: 200px;
-        height: 100px;
+        height: 120px;
         background-color: #c0392b;
-        margin-bottom: 15px;
-        color: #fefdfc; }
-    .main .right .misc > * {
-      width: 200px; }
+        margin: 15px 0;
+        color: #fefdfc;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+    .main .right .misc {
+      display: flex;
+      flex-direction: column; }
+      .main .right .misc li {
+        width: 185px;
+        margin-left: 10px; }
 
-@media only screen and (max-width: 720px) {
-  .main {
-    flex-direction: column; }
-    .main .right {
-      align-items: stretch; } }
 .fa {
   margin-right: 10px; }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #c0392b; }
+  background-color: #c0392b;
+  box-sizing: border-box; }
 
 a {
-  color: #fefdfc; }
+  color: #fefdfc;
+  text-decoration: none; }
 
 h1 {
   margin: 0;
@@ -93,11 +102,57 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .heading .right .fa {
+      margin: 0; }
     .heading .right .social {
       list-style: none;
       margin: 0;
       padding-right: 0; }
       .heading .right .social li {
         display: inline; }
+
+@media only screen and (max-width: 720px) {
+  .fa {
+    margin-right: 7px; }
+
+  .heading {
+    width: auto; }
+    .heading .name h1 {
+      font-size: 25px; }
+    .heading .name p {
+      font-size: 12px; }
+    .heading .right {
+      font-size: 14px; }
+
+  .main {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 0 10px; }
+    .main .left {
+      align-items: center;
+      text-align: center;
+      margin: 0; }
+      .main .left .skills {
+        width: 75%; }
+        .main .left .skills ul {
+          width: 100%; }
+          .main .left .skills ul li {
+            font-size: 11px;
+            margin: 1px; }
+    .main .right {
+      align-items: stretch; }
+      .main .right .projects {
+        align-items: center; }
+        .main .right .projects div {
+          width: 75%;
+          height: 150px; }
+      .main .right .misc {
+        align-items: center; }
+        .main .right .misc h4 {
+          margin: auto; }
+        .main .right .misc li {
+          width: auto;
+          margin: auto; } }
 
 /*# sourceMappingURL=app.css.map */

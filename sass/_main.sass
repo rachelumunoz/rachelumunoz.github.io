@@ -1,11 +1,14 @@
 h4
   margin: 10px
+  margin-bottom: 0
   font-family: 'Lato', sans-serif
   font-size: 15px
   font-weight: 200
-
 ul
   list-style: none
+  padding: 0
+  li 
+    margin-left: 10px
 
 .main 
   width: 650px
@@ -14,25 +17,21 @@ ul
   margin: auto
   display: flex
   font-size: 13px
-  
   .left
     flex-basis: 55%
     display: flex
     flex-direction: column
     justify-content: space-between
-    .experience
-
+    margin-left: 25px
     .skills
       li 
-        padding: 5px
-        margin-bottom: 3px
+        margin-bottom: 3px 
         display: inline-block
         border-radius: 15px
         padding: 5px 15px 
         color: $contrast-color 
         background-color: $bg-color
         font-weight: 100
-    .education
 
   .right 
     flex-basis: 45%
@@ -46,10 +45,18 @@ ul
       flex-direction: column
       div
         width: 200px
-        height: 100px
+        height: 120px
         background-color: $bg-color
-        margin-bottom: 15px
+        margin: 15px 0
         color: $contrast-color
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
 
-    .misc > *
-      width: 200px
+    .misc 
+      display: flex
+      flex-direction: column
+      li
+        width: 185px
+        margin-left: 10px
