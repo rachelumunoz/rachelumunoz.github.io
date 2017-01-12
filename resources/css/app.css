@@ -44,7 +44,8 @@ ul {
         margin-right: 4px;
         font-size: 10px; }
     .main .left .education li.details {
-      margin-left: 15px; }
+      margin-left: 15px;
+      font-size: 97%; }
   .main .right {
     flex-basis: 45%;
     display: flex;
@@ -54,11 +55,13 @@ ul {
     .main .right .projects {
       display: flex;
       flex-direction: column; }
+      .main .right .projects h4 {
+        margin-bottom: 10px; }
       .main .right .projects div {
-        width: 200px;
-        height: 120px;
+        width: 175px;
+        height: 75px;
         background-color: #c0392b;
-        margin: 15px 0;
+        margin: 5px 0;
         color: #fefdfc;
         text-align: center;
         display: flex;
