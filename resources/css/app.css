@@ -12,8 +12,8 @@ ul {
     margin-left: 10px; }
 
 .main {
-  width: 650px;
-  height: 100vh;
+  width: 60%;
+  min-height: 100vh;
   background-color: #fefdfc;
   margin: auto;
   display: flex;
@@ -22,30 +22,44 @@ ul {
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 25px; }
-    .main .left .experience li {
-      font-size: 97%; }
-    .main .left .experience p {
-      margin: 2px; }
-      .main .left .experience p .fa {
-        margin: 0;
-        font-size: 10px; }
-    .main .left .skills li {
-      margin-bottom: 3px;
-      margin-left: 7px;
-      display: inline-block;
-      border-radius: 15px;
-      padding: 5px 15px;
-      color: #fefdfc;
-      background-color: #c0392b;
-      font-weight: 100; }
-      .main .left .skills li .fa {
-        margin-right: 4px;
-        font-size: 10px; }
-    .main .left .education li.details {
-      margin-left: 15px;
-      font-size: 97%; }
+    padding: 25px; }
+    .main .left .experience {
+      flex-basis: 33%;
+      height: 33%; }
+      .main .left .experience h4 {
+        margin-top: 0; }
+      .main .left .experience li {
+        font-size: 97%; }
+      .main .left .experience p {
+        margin: 2px; }
+        .main .left .experience p .fa {
+          margin: 0;
+          font-size: 10px; }
+    .main .left .skills {
+      flex-basis: 33%;
+      height: 33%; }
+      .main .left .skills li {
+        margin-bottom: 3px;
+        margin-left: 7px;
+        display: inline-block;
+        border-radius: 15px;
+        padding: 5px 15px;
+        color: #fefdfc;
+        background-color: #c0392b;
+        font-weight: 100;
+        font-size: 97%; }
+        .main .left .skills li .fa {
+          margin-right: 4px;
+          font-size: 10px; }
+    .main .left .education {
+      flex-basis: 33%;
+      height: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .main .left .education li.details {
+        margin-left: 15px;
+        font-size: 97%; }
   .main .right {
     flex-basis: 45%;
     display: flex;
@@ -57,7 +71,7 @@ ul {
       flex-direction: column; }
       .main .right .projects h4 {
         margin-bottom: 10px; }
-      .main .right .projects div {
+      .main .right .projects a {
         width: 175px;
         height: 75px;
         background-color: #c0392b;
@@ -163,7 +177,7 @@ html {
       align-items: stretch; }
       .main .right .projects {
         align-items: center; }
-        .main .right .projects div {
+        .main .right .projects a {
           width: 75%;
           height: 125px; }
       .main .right .misc {
