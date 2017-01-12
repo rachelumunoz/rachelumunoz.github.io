@@ -70,6 +70,9 @@ ul {
     .main .right .misc {
       display: flex;
       flex-direction: column; }
+      .main .right .misc a {
+        color: black;
+        text-decoration: underline; }
       .main .right .misc li {
         width: 160px;
         margin-left: 10px; }
