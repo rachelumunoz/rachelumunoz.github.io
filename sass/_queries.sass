@@ -1,8 +1,9 @@
-@media only screen and (max-width: 870px)
+
+@media all and (max-width: 870px)
   .main .left
     padding: 10px
 
-@media only screen and (max-width: 770px) 
+@media all and (max-width: 770px) 
   .fa 
     margin-right: 7px 
   .heading
@@ -14,29 +15,44 @@
         font-size: 12px
     .right
       font-size: 14px
+      max-height: 100%
   .main 
-    flex-direction: column
+    // flex-direction: column
+    // max-height: auto
+    // width: auto
+    // margin: 0 10px
     height: auto
-    width: auto
-    margin: 0 10px
+    display: block
     .left
       align-items: center
       text-align: center
       margin: 0
+      // display: block
+      // flex: 1
       .skills
         width: 75%
+        flex: 1
+        height: 100%
         ul
           width: 100%
           li
             font-size: 11px
             margin: 1px
+      .experience
+        flex: 1
+        height: 100%
+      .education
+        flex: 1
+        height: 100%
     .right
       align-items: stretch
+      display: block
+      // flex: 1
       .projects 
         align-items: center
         a
           width: 75%
-          height: 125px
+          height: 105px
       .misc
         align-items: center
         h4
@@ -46,4 +62,10 @@
           margin: auto
 
 
-
+@media all and (max-width: 560px) 
+  .main
+    min-width: 550px
+    .left 
+      margin: auto
+    .right
+      margin: auto
