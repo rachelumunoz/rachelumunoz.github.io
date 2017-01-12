@@ -24,7 +24,7 @@ ul {
     flex-direction: column;
     padding: 25px; }
     .main .left .experience {
-      flex-basis: 33%;
+      flex: 1 1 33%;
       height: 33%; }
       .main .left .experience h4 {
         margin-top: 0; }
@@ -36,7 +36,7 @@ ul {
           margin: 0;
           font-size: 10px; }
     .main .left .skills {
-      flex-basis: 33%;
+      flex: 1 1 33%;
       height: 33%; }
       .main .left .skills li {
         margin-bottom: 3px;
@@ -52,7 +52,7 @@ ul {
           margin-right: 4px;
           font-size: 10px; }
     .main .left .education {
-      flex-basis: 33%;
+      flex: 1 1 33%;
       height: 33%;
       display: flex;
       flex-direction: column;
@@ -144,7 +144,10 @@ html {
       .heading .right .social li {
         display: inline; }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 870px) {
+  .main .left {
+    padding: 10px; } }
+@media only screen and (max-width: 770px) {
   .fa {
     margin-right: 7px; }
 
