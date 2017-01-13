@@ -50,6 +50,12 @@ html {
       padding-right: 0; }
       .heading .right .social li {
         display: inline; }
+    .heading .right .social a:hover {
+      color: #43140f; }
+
+#nav-button {
+  font-size: 250%;
+  display: none; }
 
 h4 {
   margin: 10px;
@@ -139,6 +145,8 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center; }
+      .main .right .projects a:hover {
+        color: #43140f; }
     .main .right .misc {
       display: flex;
       flex-direction: column; }
@@ -203,6 +211,24 @@ ul {
         .main .right .misc li {
           width: auto;
           margin: auto; } }
+@media all and (max-width: 675px) {
+  #nav-button {
+    display: inline-block;
+    margin-right: 5px; }
+
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    right: 110px; }
+
+  nav:hover ul {
+    display: block; }
+
+  nav li {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 155%; } }
 @media all and (max-width: 560px) {
   .main {
     max-width: 550px; }
@@ -210,5 +236,12 @@ ul {
       margin: auto; }
     .main .right {
       margin: auto; } }
+@media all and (max-width: 447px) {
+  .heading .name h1 {
+    font-size: 20px;
+    padding-right: 15px; } }
+@media all and (max-width: 415px) {
+  .heading .name p {
+    display: none; } }
 
 /*# sourceMappingURL=app.css.map */
