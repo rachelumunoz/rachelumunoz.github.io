@@ -1,250 +1,119 @@
-.fa {
-  margin-right: 10px; }
+/* original dribble design can be found at https://dribbble.com/shots/3131751-Profile-Card-03-Facebook */
+
+body, html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #c0392b;
-  box-sizing: border-box; }
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif; 
+}
 
 a {
-  color: #fefdfc;
-  text-decoration: none; }
+  
+}
 
-h1 {
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 275px;
+  height: 375px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 55px -2px rgba(0,0,0,0.1);
+}
+
+.top {
+  background-color: lightblue;
+  height: calc(450px / 4);
+  border-radius: 4px 4px 0 0;
+}
+
+
+
+.solo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(15px, 10px);
+}
+
+.solo-icon a {
+  color: #fff;
+}
+
+.image  {
+  height: 70px;
+  width: 70px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -150%);
+  box-shadow: 0 25px 20px -25px rgba(0, 0, 0, 0.2), 20px 20px 20px -25px rgba(0, 0, 0, 0.2), -20px 20px 20px -25px rgba(0, 0, 0, 0.2)
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -17%);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 100;
+  width: 70%;
+}
+
+.text h4 {
   margin: 0;
-  color: #fefdfc; }
+  font-family: 'Clicker Script', cursive;
+  font-size: 140%; 
+}
 
-html {
-  font-family: "Roboto", sans-serif; }
+.text p {
+  width: 85%;
+  text-align: center;
+  margin: 19px auto 0 auto;
+  color: #97a7a7;
+}
 
-.heading {
-  width: 750px;
-  height: 120px;
-  margin: auto;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around; }
-  .heading .left {
-    display: flex;
-    align-items: center;
-    margin-left: 125px; }
-  .heading .name h1 {
-    font-size: 35px;
-    font-weight: 300;
-    margin-bottom: 0; }
-  .heading .name p {
-    margin-top: 0;
-    color: #fdfdfe;
-    font-weight: 200; }
-  .heading .right {
-    margin-right: 125px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .heading .right .fa {
-      margin: 0; }
-    .heading .right .social {
-      list-style: none;
-      margin: 0;
-      padding-right: 0; }
-      .heading .right .social li {
-        display: inline; }
-    .heading .right .social a:hover {
-      color: #43140f; }
-
-#nav-button {
-  font-size: 250%;
-  display: none; }
-
-h4 {
-  margin: 10px;
-  margin-bottom: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  font-weight: 200; }
-
-ul {
+.links ul {
   list-style: none;
-  padding: 0; }
-  ul li {
-    margin-left: 10px; }
+  padding-left: 0;
+  margin-top: 51px;
+  margin-right: -20px;
+}
 
-.main {
-  background-color: #fefdfc;
-  display: flex;
-  font-size: 13px;
-  margin: 0 auto;
-  height: 75%;
-  padding: 25px;
-  width: 65%; }
-  .main .left {
-    flex: 1 1 55%;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    margin: 0;
-    max-height: 100%; }
-    .main .left .experience {
-      flex: 1 1 33%;
-      height: 33%; }
-      .main .left .experience h4 {
-        margin-top: 0; }
-      .main .left .experience li {
-        font-size: 97%; }
-      .main .left .experience p {
-        margin: 2px; }
-        .main .left .experience p .fa {
-          margin: 0;
-          font-size: 10px; }
-    .main .left .skills {
-      flex: 1 1 33%;
-      height: 33%; }
-      .main .left .skills li {
-        margin-bottom: 3px;
-        margin-left: 7px;
-        display: inline-block;
-        border-radius: 15px;
-        padding: 5px 15px;
-        color: #fefdfc;
-        background-color: #c0392b;
-        font-weight: 100;
-        font-size: 97%; }
-        .main .left .skills li .fa {
-          margin-right: 4px;
-          font-size: 10px; }
-    .main .left .education {
-      flex: 1 1 33%;
-      height: 33%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .main .left .education li.details {
-        margin-left: 15px;
-        font-size: 97%; }
-  .main .right {
-    flex: 1 1 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    max-height: 100%; }
-    .main .right .projects {
-      display: flex;
-      flex-direction: column; }
-      .main .right .projects h4 {
-        margin-bottom: 10px; }
-      .main .right .projects a {
-        width: 175px;
-        height: 75px;
-        background-color: #c0392b;
-        margin: 5px 0;
-        color: #fefdfc;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-      .main .right .projects a:hover {
-        color: #43140f; }
-    .main .right .misc {
-      display: flex;
-      flex-direction: column; }
-      .main .right .misc a {
-        color: black;
-        text-decoration: underline; }
-      .main .right .misc li {
-        width: 160px;
-        margin-left: 10px; }
+.links ul li {
+  display: inline-block;
+}
 
-@media all and (max-width: 870px) {
-  .main .left {
-    padding: 10px; } }
-@media all and (max-width: 770px) {
-  .fa {
-    margin-right: 7px; }
+.links a {
+  color: #97a7a7;
+  padding-right: 20px;
+  font-size: 15px;
+  opacity: .8;
+  transition: opacity .3s;
+}
 
-  .heading {
-    width: auto; }
-    .heading .name h1 {
-      font-size: 27px; }
-    .heading .name p {
-      font-size: 12px; }
-    .heading .right {
-      font-size: 14px;
-      max-height: 100%; }
+.links a:hover {
+  opacity: 1;
+}
 
-  .main {
-    height: auto;
-    display: block; }
-    .main .left {
-      align-items: center;
-      text-align: center;
-      margin: 0; }
-      .main .left .skills {
-        width: 75%;
-        flex: 1;
-        height: 100%; }
-        .main .left .skills ul {
-          width: 100%; }
-          .main .left .skills ul li {
-            font-size: 11px;
-            margin: 1px; }
-      .main .left .experience {
-        flex: 1;
-        height: 100%; }
-      .main .left .education {
-        flex: 1;
-        height: 100%; }
-    .main .right {
-      align-items: stretch;
-      display: block; }
-      .main .right .projects {
-        align-items: center; }
-        .main .right .projects a {
-          width: 75%;
-          height: 85px; }
-      .main .right .misc {
-        align-items: center; }
-        .main .right .misc h4 {
-          margin: auto; }
-        .main .right .misc li {
-          width: auto;
-          margin: auto; } }
-@media all and (max-width: 675px) {
-  #nav-button {
-    display: inline-block;
-    margin-right: 5px; }
-
-  nav ul, nav:active ul {
-    display: none;
-    z-index: 1000;
-    position: absolute;
-    right: 110px; }
-
-  nav:hover ul {
-    display: block; }
-
-  nav li {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 155%; } }
-@media all and (max-width: 560px) {
-  .main {
-    max-width: 550px; }
-    .main .left {
-      margin: auto; }
-    .main .right {
-      margin: auto; } }
-@media all and (max-width: 447px) {
-  .heading .name h1 {
-    font-size: 20px;
-    padding-right: 15px; } }
-@media all and (max-width: 415px) {
-  .heading .name h1 {
-    font-size: 17px;
-    padding-right: 40px; }
-  .heading .name p {
-    display: none; } }
-
-/*# sourceMappingURL=app.css.map */
+.new-link {
+  text-decoration: none;
+}
